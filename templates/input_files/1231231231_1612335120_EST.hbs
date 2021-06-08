@@ -1,0 +1,575 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Packing List </title>
+    <style>
+        body {
+            font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+            font-size: 14px;
+            color: #000000;
+        }
+
+        .container {
+            width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hlInfo {
+            font-size: 32px;
+            font-weight: bold;
+            vertical-align: top;
+        }
+
+        .shl {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        td,
+        th {
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+
+        .txtleft {
+            text-align: left;
+        }
+
+        .txtrt {
+            text-align: right;
+        }
+
+        .ltGray {
+            color: #808080;
+        }
+
+        .bookData {
+            word-wrap: break-word;
+        }
+
+        .bookData th:nth-child(1) {
+            width: 5px;
+            border-bottom: 0px;
+        }
+
+        .bookData th:nth-child(2) {
+            width: 20%;
+            border-bottom: 1px solid #c0c0c0;
+            padding: 10px;
+        }
+
+        .bookData th:nth-child(3) {
+            width: 43%;
+            border-bottom: 1px solid #c0c0c0;
+            padding: 10px;
+        }
+
+        .bookData th:nth-child(4) {
+            width: 20%;
+            border-bottom: 1px solid #c0c0c0;
+            padding: 10px;
+        }
+
+        .bookData th:nth-child(5) {
+            width: 17%;
+            border-bottom: 1px solid #c0c0c0;
+            padding: 10px;
+        }
+
+        .bookData th:nth-child(6) {
+            width: 5px;
+            border-bottom: 0px;
+            border-left: 0px;
+        }
+
+        .courseMaterialsTitle {
+            border: 1px solid #c0c0c0;
+            border-bottom: 0px;
+        }
+
+        .bookData thead th {
+            border: 1px solid #757575;
+            border-top: 0px;
+        }
+
+        .bookData td {
+            border: 1px solid #c0c0c0;
+            padding: 8px 10px 8px 10px;
+        }
+
+        .bookData td:first-child,
+        .bookData th:first-child {
+            border: 0px;
+            border-left: 1px solid #757575;
+            padding: 10px 2px;
+        }
+
+        .bookData td:last-child,
+        .bookData th:last-child {
+            border: 0px;
+            border-right: 1px solid #757575;
+            padding: 10px 2px;
+        }
+
+        .bookData td:nth-child(2),
+        .bookData td:nth-child(3),
+        .bookData td:nth-child(4),
+        .bookData td:nth-child(5),
+        .bookData th:nth-child(2),
+        .bookData th:nth-child(3),
+        .bookData th:nth-child(4),
+        .bookData th:nth-child(5) {
+            border-right: 0px;
+            border-top: 0px;
+        }
+
+        .bookData td:nth-child(2),
+        .bookData td:nth-child(3),
+        .bookData td:nth-child(4),
+        .bookData td:nth-child(5),
+        .bookData th:nth-child(2),
+        .bookData th:nth-child(3),
+        .bookData th:nth-child(4),
+        .bookData th:nth-child(5) {
+            border-left: 0px;
+            border-top: 0px;
+        }
+
+        .bookData td:first-child,
+        .bookData td:last-child {
+            border-left-color: #757575;
+            border-right-color: #757575;
+        }
+
+        .bookData tr:last-child td {
+            border-bottom: 1px solid #757575;
+            border-bottom-color: #757575;
+        }
+
+        /* thead {
+            display: table-header-group
+        } */
+
+        table.bookData {
+            page-break-inside: auto
+        }
+
+        table.bookData tr {
+            page-break-inside: avoid;
+            page-break-after: auto;
+        }
+
+        .mainTcontainerable {
+            page-break-inside: auto
+        }
+
+        .mainTable {
+            page-break-before: always;
+        }
+
+        /* tr {
+            page-break-inside: avoid;
+            page-break-after: auto
+        } */
+
+        /* table {
+            page-break-before: always;
+        } */
+
+
+
+        .mainTable:nth-child(1) {
+            position: relative;
+            padding-top: 77px;
+        }
+
+        .mainTable:nth-child(1)::before {
+            content: "Packing List";
+            font-size: 32px;
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+
+        /* body {
+            counter-reset: page
+        } */
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- <p class="hlInfo" style="margin:0;text-align:center;">Packing List</p> -->
+        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mainTable">
+            <tr>
+                <td width="50%">
+                    <!-- Customer Info --><br>
+                    <div
+                        style="border: 1px solid #757575;padding:10px 10px 10px 20px;min-height:100px;border-radius:10px 0 0 0;">
+
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="vtop shl txtleft"
+                                        style="padding-bottom: 5px;text-transform: uppercase;">Customer Information:
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td width="60">Name:</td>
+                                    <td>LongStudentFirstname LongStudentLastname</td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td style="word-break: break-all">
+                                        reallyreallyreallylongemailaddress@reallylongschoolname.edu</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //Customer Info -->
+                </td>
+                <td>
+                    <!-- Campus Info --><br>
+                    <div
+                        style="border: 1px solid #757575;padding:10px 10px 10px 20px;margin-left:15px;height:100px;border-radius:0 10px 0 0;">
+
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <th colspan="2" class="vtop shl txtleft"
+                                        style="padding-bottom: 5px;text-transform: uppercase;">Campus Information:
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td width="90">Campus:</td>
+                                    <td>Really Long Campus Name Goes here</td>
+                                </tr>
+                                <tr>
+                                    <td>Term:</td>
+                                    <td>Spring Semester 2021</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- //Campus Info -->
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <!-- Course Materials -->
+                    <div style="border-radius:0 0 10px 10px;padding:10px 0;margin-top:15px;">
+
+
+                        <table border="0" cellpadding="0" cellspacing="0" width="100%" class="bookData">
+                            <thead>
+                                <tr>
+                                    <th colspan="6"
+                                        style="border:1px solid #757575;border-bottom:0px;padding: 10px 16px">
+                                        <div class="shl" style="text-transform: uppercase;">Course Materials:
+                                        </div>
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <th>&nbsp;</th>
+                                    <th>Course ID</th>
+                                    <th>Title</th>
+                                    <th>ISBN</th>
+                                    <th>Cover Type</th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>FIN*310*VT1</td>
+                                    <td>Student Handbook for Writing in Biology - 5th edition</td>
+                                    <td>1234567890123</td>
+                                    <td>Paperback</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>ACC*500*VT1</td>
+                                    <td>Biology -Laboratory Manual -To Accompany Booker : Biology - 08 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Loose-Leaf</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>ACC*415*01</td>
+                                    <td>Molecular Biology of the Cell</td>
+                                    <td>9780815344322</td>
+                                    <td>Hardback</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>BIO101 01783</td>
+                                    <td>Concepts of Biology (OER) - 16 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Access Code</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>FIN*310*VT1</td>
+                                    <td>Student Handbook for Writing in Biology - 5th edition</td>
+                                    <td>1234567890123</td>
+                                    <td>Paperback</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>ACC*500*VT1</td>
+                                    <td>Biology -Laboratory Manual -To Accompany Booker : Biology - 08 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Loose-Leaf</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>ACC*415*01</td>
+                                    <td>Molecular Biology of the Cell</td>
+                                    <td>9780815344322</td>
+                                    <td>Hardback</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>BIO101 01783</td>
+                                    <td>Concepts of Biology (OER) - 16 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Access Code</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>BIO101 01783</td>
+                                    <td>Concepts of Biology (OER) - 16 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Access Code</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>FIN*310*VT1</td>
+                                    <td>Student Handbook for Writing in Biology - 5th edition</td>
+                                    <td>1234567890123</td>
+                                    <td>Paperback</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>ACC*500*VT1</td>
+                                    <td>Biology -Laboratory Manual -To Accompany Booker : Biology - 08 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Loose-Leaf</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>ACC*415*01</td>
+                                    <td>Molecular Biology of the Cell</td>
+                                    <td>9780815344322</td>
+                                    <td>Hardback</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>BIO101 01783</td>
+                                    <td>Concepts of Biology (OER) - 16 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Access Code</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>BIO101 01783</td>
+                                    <td>Concepts of Biology (OER) - 16 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Access Code</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>FIN*310*VT1</td>
+                                    <td>Student Handbook for Writing in Biology - 5th edition</td>
+                                    <td>1234567890123</td>
+                                    <td>Paperback</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>ACC*500*VT1</td>
+                                    <td>Biology -Laboratory Manual -To Accompany Booker : Biology - 08 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Loose-Leaf</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>ACC*415*01</td>
+                                    <td>Molecular Biology of the Cell</td>
+                                    <td>9780815344322</td>
+                                    <td>Hardback</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>BIO101 01783</td>
+                                    <td>Concepts of Biology (OER) - 16 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Access Code</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>BIO101 01783</td>
+                                    <td>Concepts of Biology (OER) - 16 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Access Code</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>BIO101 01783</td>
+                                    <td>Concepts of Biology (OER) - 16 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Access Code</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>FIN*310*VT1</td>
+                                    <td>Student Handbook for Writing in Biology - 5th edition</td>
+                                    <td>1234567890123</td>
+                                    <td>Paperback</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>ACC*500*VT1</td>
+                                    <td>Biology -Laboratory Manual -To Accompany Booker : Biology - 08 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Loose-Leaf</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>ACC*415*01</td>
+                                    <td>Molecular Biology of the Cell</td>
+                                    <td>9780815344322</td>
+                                    <td>Hardback</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>BIO101 01783</td>
+                                    <td>Concepts of Biology (OER) - 16 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Access Code</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>BIO101 01783</td>
+                                    <td>Concepts of Biology (OER) - 16 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Access Code</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>BIO101 01783</td>
+                                    <td>Concepts of Biology (OER) - 16 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Access Code</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>FIN*310*VT1</td>
+                                    <td>Student Handbook for Writing in Biology - 5th edition</td>
+                                    <td>1234567890123</td>
+                                    <td>Paperback</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>ACC*500*VT1</td>
+                                    <td>Biology -Laboratory Manual -To Accompany Booker : Biology - 08 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Loose-Leaf</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>ACC*415*01</td>
+                                    <td>Molecular Biology of the Cell</td>
+                                    <td>9780815344322</td>
+                                    <td>Hardback</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td>&nbsp;</td>
+                                    <td>BIO101 01783</td>
+                                    <td>Concepts of Biology (OER) - 16 edition</td>
+                                    <td>4651119752677 </td>
+                                    <td>Access Code</td>
+                                    <td>&nbsp;</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="6" style="border:0px;padding: 10px 0px">
+                                        <table border="0" cellpadding="0" cellspacing="0" width="100%">
+
+                                            <tr>
+                                                <td style="border:0px;"><span class="ltGray"
+                                                        style="padding:0 20px;text-align:left;">Student ID:
+                                                        1234567890</span></td>
+                                                <td style="border:0px;">
+                                                    <!-- timestamp of when the packing list was created -->
+                                                    <span class="ltGray" style="text-align:center;">Created: Feb 03,
+                                                        2021 - 12:22 PM EST</span>
+                                                </td>
+                                                <td style="padding-right:20px;border:0px;" class="txtrt ltGray">
+                                                    <span id="page-number">1</span> of 2
+                                                </td>
+                                            </tr>
+
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table><br>
+                    </div>
+                    <!-- //Course Materials -->
+                </td>
+            </tr>
+        </table>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<html>
+    <style>
+        tr th{
+	font-weight:bold;
+    }
+tr th, tr td{
+	padding:5px;
+}
+th{
+    border: 5px solid #C1DAD7;
+}
+td{
+	border: 5px solid #C1DAD7;
+}
+.c1{
+	background:#4b8c74;
+}
+.c2{
+	background:#74c476;
+}
+.c3{
+	background:#a4e56d;
+}
+.c4{
+	background:#cffc83;
+}
+@page { size:8in 10in; margin: 0; }
+    </style>
+    <body>
+       
+          {{#each enrollment as |enrollment| }}
+           <h1>BN College</h1>
+        <p>{{enrollment.firstName}}</p>
+        <p>{{enrollment.lastName}}</p>
+        <table>
+            <tr>
+                <th class="c1">
+                    courseId
+                </th>
+           
+                <th class="c2">
+                    Isbn
+                </th>
+            </tr>
+            {{#each enrollment.data as |data| }}
+            <tr>
+                <td class="c1">
+                    {{data.courseId}}
+                </td>
+            
+                <td class="c2">
+                    {{data.Isbn}}
+                </td>
+            </tr>
+            {{/each}}
+        </table>
+        <br>
+        <div style="page-break-after:always;"></div>
+        {{/each}}
+        
+    </body>
+    </html>
