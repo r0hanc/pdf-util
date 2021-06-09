@@ -30,7 +30,7 @@ const mergeAllPdfs = async (pdfList) => {
       if (err) {
         return console.log(err)
       }
-      // fs.rmdirSync(interimPdfs, { recursive: true });
+      fs.rmdirSync(interimPdfs, { recursive: true });
     });
   }
 }
